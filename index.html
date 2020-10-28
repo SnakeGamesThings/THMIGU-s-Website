@@ -1,5 +1,4 @@
-<canvas id="thmigu" width="1350" height="640"></canvas>
-<h2 style="font-family: Font; text-align: center;">THMIGU's Plugins</h2>
+<h2 style="font-family: Font; text-align: center; font-size: 30px">THMIGU's Plugins</h2>
 <style>
 	body {
 		background: linear-gradient(90deg, red, orange, yellow, lime, green, cyan, blue, indigo, violet, white);
@@ -19,19 +18,38 @@
 		border-radius: 12px;
 		background-color: #272222;
 	}
+	.boximg1 {
+		position: fixed;
+		left: 35px;
+		top: 80px;
+	}
+	.box2 {
+
+	}
+	.text {
+		font-family: THMIGUFont;
+		left: 21px;
+		top: 300px;
+		font-size: 18px;
+		position: fixed;
+		color: orange;
+	}
+	.button1 {
+		font-family: Verdana;
+		background-color: #119990;
+		color: white;
+		border: none;
+		border-radius: 12px;
+		font-size: 20px;
+		position: fixed;
+		left: 53px;
+		top: 260px;
+		cursor: pointer;
+	}
 	@font-face { font-family: Font; src: url('font.otf'); }
 	@font-face { font-family: THMIGUFont; src: url('font2.otf') }
 </style>
 <div class="box1"></div>
-<script>
-	window.onload = function () {
-		canv = document.getElementById("thmigu");
-		ctx = canv.getContext("2d");
-		setInterval(text, 1000 / 1000);
-     	};
-	function text() {
-		ctx.font = "16px THMIGUFont";
-		ctx.fillStyle = "orange";
-		ctx.fillText("TEST", 30, 30);
-	}
-</script>
+<text class="text">Launch DEMO - 1.8</text> 
+<button type="button" class="button1" onclick="window.location.href='Launch DEMO - 1.8.zip'">Download</button>
+<img src="launch.ico" class="boximg1" width="150" height="150"></img>
