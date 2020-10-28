@@ -1,10 +1,11 @@
+<canvas id="thmigu" width="1350" height="640"></canvas>
 <h2 style="font-family: Font; text-align: center;">THMIGU's Plugins</h2>
 <style>
 	body {
-	background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, indigo, violet);
-	background-size: 10000% 10000%;
+		background: linear-gradient(90deg, red, orange, yellow, lime, green, cyan, blue, indigo, violet, white);
+		background-size: 10000% 10000%;
 
-	animation: bg-gradient 20s infinite;
+		animation: bg-gradient 20s infinite;
 	}
 
 	@keyframes bg-gradient { 
@@ -18,13 +19,19 @@
 		border-radius: 12px;
 		background-color: #272222;
 	}
-	.text {
-		font-family: THMIGUFont;
-		left:30px;
-		top:30px;
-	}
 	@font-face { font-family: Font; src: url('font.otf'); }
 	@font-face { font-family: THMIGUFont; src: url('font2.otf') }
 </style>
 <div class="box1"></div>
-<div class="text">TEXT</div>
+<script>
+	window.onload = function () {
+		canv = document.getElementById("thmigu");
+		ctx = canv.getContext("2d");
+		setInterval(text, 1000 / 1000);
+     	};
+	function text() {
+		ctx.font = "16px THMIGUFont";
+		ctx.fillStyle = "orange";
+		ctx.fillText("TEST", 30, 30);
+	}
+</script>
